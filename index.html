@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bingo Card Generator</title>
+<title>Bingo Kaart Generator</title>
 <style type="text/css">
     body {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -344,46 +344,45 @@ $(document).ready(bingoGenerator.checkQS);
 </script>
 </head>
 <body>
-<h1>Make your own bingo cards</h1>
+<h1>Maak je eigen bingo</h1>
 <form action="#results" method="get"><!-- onsubmit="generate();return false;" -->
-	<p id="intro">I've provided a sample to create bingo cards for a day in the park. You can enter your own settings to create your own custom bingo cards.</p>
 	<fieldset>
-		<legend>Bingo Card Basics</legend>
-		<label>Card Title <input type="text" name="title" id="title" value="Fun Fun Muziek Bingo"></label>
-		<label>Word List (separated by commas)</label><textarea cols="60" rows="8" name="words" id="words">
+		<legend>Bingo Kaart Informatie</legend>
+		<label>Kaart Titel <input type="text" name="title" id="title" value="Fun Fun Muziek Bingo"></label>
+		<label>Woorden Lijst (scheiden met een comma)</label><textarea cols="60" rows="8" name="words" id="words">
             Danny's Autopaleis, Bloemetjes Gordijn, Ferry de Roze Flamingo, Three Little Birds, Una Paloma Blanca, Schultenbräu, Bewegen is gezond, Zijn Het Je Ogen, Laat De Zon In Je Hart, De Woonboot, Stef Ekkel, Kali, Ons Moeder Zeej Nog, Met De Vlam In De Pijp, Op Fietse, Bloed, Zweet En Tranen, Proosten, Dat Interesseert Me Echt Geen Ene Reet, Amalia, Leef, Als Je Verliefd Op Een Jongen Bent, Year Of Summer - Radio Edit, Het Barbecue Lied, Fantastico, Boer Harms, Poen, Vanavond (Uit M'n Bol), Paint It, Black, Rainbow In The Sky, Krijg Een Heel Apart Gevoel Van Binnen, I'm Still Standing, Noodgeval, Een Beetje Verliefd, Het Laatste Rondje, Have You Ever Been Mellow, Verliefd Zijn, Engelbewaarder, Jij Denkt Maar Dat Je Alles Mag Van Mij, Kijk Omhoog, Rio, Het Regent Zonnestralen, 't Dondert En 't Bliksemt, Als De Morgen Is Gekomen, Mexico, Viva Hollandia, Even Aan Mijn Moeder Vragen</textarea>
 	</fieldset>	
 
 	<fieldset>
-		<legend>Free Space</legend>
-		<label>Include a free space? 
+		<legend>Gratis Vakje</legend>
+		<label>Wil je een gratis vakje 
 			<select name="freespace" id="freespace">
 				<option value="true" selected="selected">Yes</option>
 				<option value="false">No</option>
 			</select>
 		</label>
-		<label>Free Space Text <input type="text" name="freespaceValue" id="freespaceValue" value="Park Bench"></label>
-        <label>Free Space Description <input type="text" name="freespaceSubheadingValue" id="freespaceSubheadingValue" value="Free Space"></label>
-		<label>Free Space Placement
+		<label>Gratis Vakje tekst<input type="text" name="freespaceValue" id="freespaceValue" value="Park Bench"></label>
+        <label>Gratis Vakje beschrijving <input type="text" name="freespaceSubheadingValue" id="freespaceSubheadingValue" value="Free Space"></label>
+		<label>Waar moet het gratis vakje?
 			<select name="freespaceRandom" id="freespaceRandom">
 				<option value="true">Random</option>
-				<option value="false" selected="selected">Center</option>
+				<option value="false" selected="selected">Midden</option>
 			</select>
 		</label>
 	</fieldset>
 
 	<fieldset>
-		<legend>Card Size</legend>
-		<p>A 5x5 bingo card is traditional, but you can try other sizes</p>
-		<label>Number of Squares Wide <input type="text" name="width" id="width" value="5"></label>
-		<label>Number of Squares Tall <input type="text" name="height" id="height" value="5"></label>
+		<legend>Kaart GRote</legend>
+		<p>Een 5x5 bingo is normaal, maar je kan andere grotes proberen.</p>
+		<label>Breedte <input type="text" name="width" id="width" value="5"></label>
+		<label>Hoogte <input type="text" name="height" id="height" value="5"></label>
 	</fieldset>
 
 	
 	<fieldset>
-		<legend>Printing Options</legend>
-		<p>Select the <em>landscape</em> page layout when printing for best results</p>
-		<label>Number of cards to create <input type="text" name="number" id="number" value="10"></label>
+		<legend>Print Opties</legend>
+		<p>Selecteer de <em>liggend</em> layout als je gaat printen</p>
+		<label>Aantal kaarten <input type="text" name="number" id="number" value="10"></label>
 	</fieldset>
 	<label><input type="submit" value="Generate Bingo Cards"></label>
 </form>
